@@ -1,0 +1,91 @@
+.stats-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .stats-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  
+  .stats-controls input,
+  .stats-controls select {
+    background-color: #111216;
+    color: #f2f2f2;
+    border: 2px solid #2f3138;
+    padding: 12px;
+    font-size: 1rem;
+    font-family: Georgia, "Times New Roman", serif;
+  }
+  
+  .stats-controls input {
+    flex: 1 1 260px;
+  }
+  
+  .country-block {
+    border: 2px solid #2a2a2f;
+    background-color: #0b0b0d;
+    padding: 18px;
+    margin-bottom: 18px;
+  }
+  
+  .country-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 14px;
+    align-items: center;
+  }
+  
+  .country-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .country-info {
+    color: #bfbfbf;
+    font-size: 0.95rem;
+  }
+  
+  .country-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 14px;
+  }
+  
+  .country-images img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    background-color: #050507;
+    border: 2px solid #1d1e22;
+    padding: 10px;
+    display: block;
+    transition: transform 0.15s ease, border-color 0.15s ease;
+  }
+  
+  .country-images img:hover {
+    transform: scale(1.04);
+    border-color: #3a3d46;
+  }
+  
+  .empty-message {
+    color: #bfbfbf;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 700px) {
+    .country-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .country-images {
+      grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    }
+  }
+  

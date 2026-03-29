@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #050507;
+    color: #f2f2f2;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.topbar {
+    width: 100%;
+    text-align: center;
+    padding-top: 28px;
+    padding-bottom: 16px;
+}
+
+.topbar h1 {
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: 0.12em;
+    font-weight: 700;
+}
+
+.subtext {
+    margin: 10px 0 0 0;
+    color: #bfbfbf;
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.card {
+    width: 100%;
+    max-width: 520px;
+    text-align: center;
+}
+
+.image-box {
+    width: 100%;
+    aspect-ratio: 1 / 1;   
+    border: 2px solid #2a2a2f;
+    background-color: #0b0b0d;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 24px;
+}
+
+.image-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;  
+  }
+
+.card h2 {
+    margin: 0 0 20px 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.answers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.answers button {
+    background-color: #111216;
+    color: #f2f2f2;
+    border: 2px solid #2f3138;
+    padding: 16px 12px;
+    font-size: 1rem;
+    font-family: Georgia, "Times New Roman", serif;
+    cursor: pointer;
+}
+
+.answers button:hover {
+    background-color: #1a1c22;
+}
+
+.meta {
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+    color: #bfbfbf;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+.topbar h1 {
+    font-size: 2.2rem;
+}
+
+.answers {
+    grid-template-columns: 1fr;
+}
+}
+
+
+.answers button.correct {
+    background-color: rgba(120, 190, 140, 0.18);
+    border-color: rgba(120, 190, 140, 0.65);
+    color: #dff5e5;
+}
+  
+.answers button.wrong {
+    background-color: rgba(190, 110, 110, 0.18);
+    border-color: rgba(190, 110, 110, 0.65);
+    color: #f8dddd;
+}
+
+.answers button:disabled {
+    opacity: 1;
+    cursor: default;
+}
+
+.nav-links {
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+
+.nav-links a {
+    color: #d8d8d8;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
